@@ -16,3 +16,6 @@ end
 #cat the id_rsa.pub to the end of the authorized keys
 system "cat id_rsa.pub >> .ssh/authorized_keys"
 
+system "chmod 700 .ssh"
+system "chmod 600 .ssh/authorized_keys"
+
